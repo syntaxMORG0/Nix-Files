@@ -1,6 +1,6 @@
 ### Basic setup
 set $mod Mod4
-set $term kitty
+set $term foot
 set $browser librewolf
 set $menu wofi --show drun
 
