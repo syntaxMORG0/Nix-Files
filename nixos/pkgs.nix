@@ -9,7 +9,6 @@
     htop
     librewolf
     sway
-    kitty
     waybar
     swaybg
     xdg-desktop-portal-wlr
