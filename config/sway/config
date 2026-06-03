@@ -1,0 +1,56 @@
+### Basic setup
+set $mod Mod4
+set $term kitty
+set $browser librewolf
+set $menu wofi --show drun
+
+exec_always waybar
+
+### Wallpaper
+output * bg ~/.config/sway/wallpaper.jpg fill
+output * scale 1.9
+
+set $XCURSOR_SIZE 30
+
+gaps outer 5
+gaps inner 5
+
+### Input (Norwegian keyboard + your options)
+input * {
+    xkb_layout no
+    xkb_options eurosign:e,caps:escape
+    xkb_variant nodeadkeys
+}
+
+### Keybindings
+
+bindsym $mod+e exec $browser
+bindsym $mod+q exec $term
+bindsym $mod+Return exec $menu
+bindsym $mod+w kill
+bindsym $mod+Shift+c reload
+bindsym $mod+z exit
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+
+### Layout basics
+bindsym $mod+b splith
+bindsym $mod+v splitv
+bindsym $mod+f fullscreen
+bindsym $mod+space floating toggle
