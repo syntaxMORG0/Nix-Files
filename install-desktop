@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# basic install script
+
+echo "Have you deleted the old .config or backed it up?"
+
+read -p "(Y/N)? " question
+
+if [ "$question" = "Y" ]; then
+  echo "Proceeding..."
+else
+  echo "Aborting..."
+  exit 1
+fi
+
+mv ./config ~/.config
+
+echo "Finished...."
+
+reloadsway
