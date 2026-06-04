@@ -2,6 +2,8 @@
 
 This comes with a configured verison of sway and kitty as a terminal
 
+more epic configs at https://github.com/samurainen2/voidfiles
+
 **install**
 
 ```bash
