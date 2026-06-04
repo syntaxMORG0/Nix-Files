@@ -4,7 +4,7 @@
 {
   environment.systemPackages = with pkgs; [
     git
-    vim
+    helix
     curl
     htop
     librewolf
