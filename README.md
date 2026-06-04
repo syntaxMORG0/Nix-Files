@@ -85,9 +85,22 @@ sudo nixos-generate-config
   1.5.1: Install git
 
   ```bash
-  sudo nix shell nixpkgs#git
+  sudo vim /etc/nixos/configuration.nix
   ```
 
+  find enviroment.systemPackages and add ``git``
+
+  rebuild
+
+  ```bash
+  sudo nixos-rebuild switch
+  ```
+
+  test if it installed correctly
+  
+  ```bash
+  git --version
+  ```
   1.5.2: Clone this repo
 
   ```bash
